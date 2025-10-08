@@ -1,16 +1,27 @@
-# 🎓 Student Management System (APC-7923)
+# 🎓 Student & Enrollment Management System (APC-7923)
 
-A **Spring Boot Microservices Project** that efficiently manages student data and administrative operations for educational institutions.  
-This project focuses on **clean architecture, modular microservices, RESTful APIs, and database persistence** using **Spring Boot, JPA, and Maven** — without Spring Security for simplicity.
+A **Spring Boot Microservices Project** that manages student information and course enrollments through a modular, service-oriented architecture.  
+This project demonstrates **microservices communication, RESTful APIs, Feign clients, and database persistence** using **Spring Boot, JDBC, and Maven**, along with a **CLI-based frontend** for easy interaction.
 
 ---
 
 ## 🧩 Project Overview
 
-The **Student Management System (SMSS)** automates common academic management tasks such as adding, viewing, updating, and deleting student records.  
-It consists of **two independent microservices** — one for **Admin** operations and another for **Student** management — which communicate via REST APIs.
+The **Student & Enrollment Management System (SEMS)** streamlines academic operations such as **adding, updating, deleting, and viewing student data**, as well as **managing course enrollments**.  
+It is built using **two independent Spring Boot microservices** — one handling **student management** and the other managing **enrollments** — both connected through an **API Gateway** that routes and integrates service communication seamlessly.  
 
-This structure ensures scalability, modularity, and clarity in backend development.
+Additionally, a **Command Line Interface (CLI)** client provides an interactive frontend to perform all operations directly from the terminal, with formatted table outputs for a professional experience.
+
+---
+
+## ⚙️ Microservices Architecture
+
+| Service Name | Port | Description |
+|---------------|------|-------------|
+| **API Gateway** | `8080` | Routes requests to Student and Enrollment microservices |
+| **Student Service** | `8081` | Handles all student-related operations (add, update, view, delete) |
+| **Enrollment Service** | `8082` | Manages student course enrollments, updates, and deletions |
+| **CLI Client** | - | Frontend command-line interface for user interaction |
 
 ---
 
@@ -20,19 +31,39 @@ This structure ensures scalability, modularity, and clarity in backend developme
 |------|--------------|
 | **Nomita** | 2310990755 |
 | **Nandini Jhunjhunwal** | 2310990747 |
-| **Megha** | 2310990736 | 
-| **Mehak** | 2310990737 | 
+| **Megha** | 2310990736 |
+| **Mehak** | 2310990737 |
+
 ---
 
 ## 🧠 Features
 
 ✅ Microservices-based modular architecture  
-✅ RESTful CRUD APIs for both Admin and Student services  
-✅ Database integration with JPA (H2/MySQL)  
-✅ Independent service configuration and execution  
-✅ Data persistence and consistency  
-✅ Clear folder structure and maintainable codebase  
-✅ Responsive and extendable backend foundation for future UI or authentication modules  
+✅ RESTful APIs for Student and Enrollment operations  
+✅ API Gateway for unified routing and communication  
+✅ CLI-based interactive frontend for user-friendly operations  
+✅ Database persistence using Spring JDBC  
+✅ Feign client for service-to-service communication  
+✅ Clean and formatted table-style data display in CLI  
+✅ Independent configuration and scalable design  
+
+---
+
+## 💻 CLI Functionalities
+
+The CLI allows users to perform the following operations:
+
+1. ➕ Add new student  
+2. 📋 View all students  
+3. 🔍 View specific student details  
+4. ✏️ Update student details  
+5. ❌ Delete student record  
+6. 🏫 Enroll student in a course  
+7. 📚 View all enrollments  
+8. 🎯 View enrollments for a specific student  
+9. 🔄 Update enrollment details  
+10. 🗑️ Remove enrollment  
+11. 🚪 Exit the system  
 
 ---
 
