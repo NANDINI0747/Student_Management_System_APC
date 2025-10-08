@@ -1,4 +1,4 @@
-# 🎓 Student Management System (SMSS)
+# 🎓 Student Management System (APC-7923)
 
 A **Spring Boot Microservices Project** that efficiently manages student data and administrative operations for educational institutions.  
 This project focuses on **clean architecture, modular microservices, RESTful APIs, and database persistence** using **Spring Boot, JPA, and Maven** — without Spring Security for simplicity.
