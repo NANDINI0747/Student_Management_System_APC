@@ -1,0 +1,52 @@
+Student Service (http://localhost:8081)
+
+POST http://localhost:8081/students/add
+
+{
+  "rollNo": "103",
+  "name": "Nandini Jhunjhunwal",
+  "email": "nandini@example.com"
+}
+
+
+GET http://localhost:8081/students/roll/103
+
+GET http://localhost:8081/students/all
+
+PUT http://localhost:8081/students/update/103
+
+{
+  "name": "Nandini J",
+  "email": "nandini.j@example.com"
+}
+
+
+DELETE http://localhost:8081/students/delete/103
+
+Enrollment Service (http://localhost:8082)
+
+POST http://localhost:8082/enrollments/enroll
+
+{
+  "studentRollNo": "104",
+  "course": "Mathematics",
+  "credit": 3
+}
+
+
+GET http://localhost:8082/enrollments/all
+
+GET http://localhost:8082/enrollments/student/103
+
+PUT http://localhost:8082/enrollments/update/103?oldCourse=Mathematics&newCourse=Physics&credit=4
+
+DELETE http://localhost:8082/enrollments/unenroll/103?course=Physics
+
+DELETE http://localhost:8082/enrollments/student/103
+
+
+
+mvn clean install
+mvn clean install -U
+ mvn clean compile exec:java
+ mvn spring-boot:run
