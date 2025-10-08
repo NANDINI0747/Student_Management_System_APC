@@ -17,7 +17,7 @@ This structure ensures scalability, modularity, and clarity in backend developme
 ## 👥 Team Members
 
 | Name | Roll Number |
-|------|--------------|------|
+|------|--------------|
 | **Nomita** | 2310990755 |
 | **Nandini Jhunjhunwal** | 2310990747 |
 | **Megha** | 2310990736 | 
